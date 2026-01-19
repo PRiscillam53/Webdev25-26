@@ -1,2 +1,89 @@
 /* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
+
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
+   /* General Reset */
+/* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
+   Hint: Remember all the fundamental CSS rules when working with flexboxes */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOP HEADER */
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+#top-header .right {
+  font-size: 10pt;
+}
+
+/* GREEN NAV BAR */
+#top-nav {
+  display: flex;
+  background-color: #04AA6D;
+  padding: 12px;
+  gap: 50px;
+  justify-content: center;
+}
+
+#top-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT AREA */
+#container {
+  display: flex;
+  margin-top: 5px;
+}
+
+/* SIDEBAR */
+#sidebar {
+  width: 180px;
+  border-right: 2px solid #ccc;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+#sidebar a {
+  display: block;
+  margin: 8px 0;
+  color: black;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN & SAMPLE SECTIONS */
+#content, #sample {
+  flex: 1;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #04AA6D;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
