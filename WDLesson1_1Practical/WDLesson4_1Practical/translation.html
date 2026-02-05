@@ -11,9 +11,18 @@
         let house = ""
 
         // Challenge 9: If the language is Spanish, set house to "casa"
+        if (lang == "Spanish") {
+          house = "casa";
+        }
         // Challenge 10: Make a similar decision for the other two languages in the drop down.
-  
+        else if (lang == "French") {
+          house = "maison";
+        }
+        else if (lang == "German") {
+          house = "haus";
+        }
         // Challenge 11: Display an appropriate message stating "house" in the specified language is given translation.       
+        document.getElementById("output").innerHTML = `The translation of "house" in ${lang} is "${house}".`;
     
 
       }
