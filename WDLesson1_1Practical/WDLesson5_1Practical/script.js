@@ -6,23 +6,24 @@ Notes:
 2) Create a for loop where the loop variable is t and the condition ends at the number of years 
 the user specifies in the text input.
 3) Use a build variable to create an output that looks like this
-Year 1: $1050.00
-Year 2: $1102.50
-Year 3: $1157.63
+Year 1:
+Year 2:
+Year 3:
 ...
-Year N: $1157.63
+Year N:
 */
-function calculateBalance() {
-  let P = Number(document.getElementById("principal").value);   // starting money
-  let r = Number(document.getElementById("rate").value);        // interest rate
-  let years = Number(document.getElementById("years").value);   // number of years
+function calculate() {
+    let output = document.getElementById("output");
+    let P = parseFloat(document.getElementById("P").value);
+    let r = parseFloat(document.getElementById("r").value)
+    let n = parseInt(document.getElementById("n").value);
+    let yrs = parseInt(document.getElementById("t").value);
+    let build =`<h3>Yearly Balances</h3>`;
 
-  let output = "";
+    for (let t = 0; t <= yrs; t += 1){
+         let A = P * Math.pow(1 + r/n, n*t);
+         build += `Year ${+}: $${A.toFixed(2)}<br>`;
+    }
 
-  for (let t = 1; t <= years; t++) {
-    let A = P * Math.pow((1 + r), t); // compound interest formula
-    output += "Year " + t + ": $" + A.toFixed(2) + "<br>";
-  }
-
-  document.getElementById("result").innerHTML = output;
+    output.innerHTML = build;
 }
