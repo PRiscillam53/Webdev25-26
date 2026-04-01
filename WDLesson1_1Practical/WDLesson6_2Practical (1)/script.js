@@ -1,7 +1,7 @@
 function BHS(){
   let school = {
     "name":"Bayside High School",
-    "image":"https://imagescdn.homes.com/i2/DR3rh3ZAFGmxdce_vrcZB-VfI1qR7cPIq11ixKmzhCY/117/bayside-high-school-bayside-ny-2-schoolphoto.jpg",
+    "image":"https://live.staticflickr.com/7811/40010634273_301b63ddde_h.jpg",
     "address": "32-24 Corporal Kennedy Street, Bayside NY 11361"
   };
   let output = document.getElementById("output");
