@@ -30,18 +30,27 @@
     <div class="container">
       <div id="leftPanel">
         <!--Card below is the basic HTML to use for Challenge 1 and 3 -->
-
-        <!--Challenge 3: Create another UI in order to filter by crash type. [See Challenge 4 in script.js] -->
         <div class="card">
-          <h3>Search Crashes</h3>
-          <input type="text" id="Crash" placeholder="List Crashes">
-          <hr>
-          <a class="button" onclick="filterByCrash()">Search</a>
+          <h3>SEARCH By Crash</h3>
+          <input type="text" id="crash" placeholder="Enter Crash (all CAPS)">
+          <hr></hr>
+          <a class="button" onclick="filterByCrash()"> Search </a>
         </div>
-    
-</div>
+        <!--Challenge 1: Create another UI in order to filter by zip code. [See Challenge 2 in script.js] -->
+
+
+        <!--Challenge 3: Create another UI in order to filter by complaint type. [See Challenge 4 in script.js] -->
+
 
       </div>
+
+      <div class="card" id="rightPanel">
+        <h1>MVC Service Requests</h1>
+        <div id="result" class="container"></div>
+        <div id="output" class="container"></div>
+      </div>
+      
+    </div>
 
     <div id="footer" class="container center">
       <h3>Lesson 6.7 Practical</h3>
