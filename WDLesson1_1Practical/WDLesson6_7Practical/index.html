@@ -19,7 +19,7 @@
     <div class="container subbanner">
       <div>
         <p>This practical challenges students to provide various ways to filter  
-          311 Service Requests (Complaints) retrieved from NYC Open Data.</p>
+          MVC Service Requests (Crashes) retrieved from NYC Open Data.</p>
         <a class="button" href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data</a> 
         <a class="button" target="_blank" href="https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data"
 "> Motor-Vehicle-Collisions-Crashes</a>
@@ -32,15 +32,25 @@
         <!--Card below is the basic HTML to use for Challenge 1 and 3 -->
         <div class="card">
           <h3>SEARCH By Crash</h3>
-          <input type="text" id="crash" placeholder="Enter Crash (all CAPS)">
-          <hr></hr>
-          <a class="button" onclick="filterByCrash()"> Search </a>
+          <input type="text" id="crashFactor" placeholder="Enter Crash (ALL CAPS)">
+          <input type="text" id="crashType" placeholder="Enter Crash Type">
+          <hr>
+          <a class="button" onclick="filterByCrash()"> Search</a>
         </div>
         <!--Challenge 1: Create another UI in order to filter by zip code. [See Challenge 2 in script.js] -->
-
-
-        <!--Challenge 3: Create another UI in order to filter by complaint type. [See Challenge 4 in script.js] -->
-
+        <div class="card">
+          <h3>Search By Zip Code</h3>
+          <input type="text" id="zip" placeholder="Enter Zip Code">
+          <hr>
+          <a class="button" onclick="filterByZip()">Search</a>
+        </div>
+        <!--Challenge 3: Create another UI in order to filter by Crash type. [See Challenge 4 in script.js] -->
+        <div class="card">
+          <h3>Search By Crash type</h3>
+          <input type="text" id="crash" placeholder="Enter Crash Code">
+          <hr>
+          <a class="button" onclick="filterByCrash()">Search</a>
+        </div>
 
       </div>
 
