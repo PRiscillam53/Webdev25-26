@@ -70,11 +70,11 @@ function filterByCrash() {
             build += `<div class="fitted card">
                 <h3>${crash.collision_id}</h3>
                 <hr>
-                <p>${crash.borough || "N/A"}</p>
-                <p>${crash.on_street_name || "N/A"}</p>
+                <p>${crash.borough || "borough"}</p>
+                <p>${crash.on_street_name || "Streets"}</p>
                 <hr>
-                <p>${crash.contributing_factor_vehicle_1 || "N/A"}</p>
-                <p>${crash.vehicle_type_code1 || "N/A"}</p>
+                <p>${crash.contributing_factor_vehicle_1 || "2"}</p>
+                <p>${crash.vehicle_type_code1 || "1"}</p>
                 <p>${crash.number_of_persons_injured || "0"}</p>
             </div>`;
             ct++;
