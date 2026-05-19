@@ -2,14 +2,9 @@ html,body{
   margin:0 auto;
   font-family:Arial;
 }
-input[type=text]{
-  border: 2px solid orangered;
-  border-radius: 4px;
-}
 .container{
   display:flex;
   padding:10px;
-  flex-wrap:wrap;
 }
 .center{
   justify-content:center;
@@ -17,7 +12,7 @@ input[type=text]{
 }
 
 nav{
-  background-color:blue;
+  background-color:cornflowerblue;
 }
 nav a{
   color:black;
@@ -27,13 +22,13 @@ nav a{
   text-align:center;
 }
 nav a:hover{
-  color:red;
+  color:white;
 }
 .subbanner{
-  background-color:forestgreen;
+  background-color:cornflowerblue;
 }
 #banner{
-  background-color:palegreen;
+  background-color:blue;
   color:white;
 }
 #footer{
@@ -44,29 +39,20 @@ nav a:hover{
   right: 0;
   bottom:0px;
 }
- #leftPanel{
-   flex:1;
-   max-height:600px;;
-   overflow-y:scroll;
- }
+ 
 .card{
   flex:1;
   margin:10px;
   padding:10px;
   border:1px solid gray;
   text-align:center;
-  background-color: beige;
+  box-shadow:2px 2px 2px black;
+  border-radius:2px;
 }
-#map{
-  flex:1;
-  width:90%;
-  height:400px;
-  border-radius:10px;
-  box-shadow:2px 2px 2px green;
-}
+
 .highlight{
   font-style:italic;
-  color:lightseagreen;
+  color:blue;
 }
 .heading{
   font-weight:bold;
@@ -78,34 +64,21 @@ nav a:hover{
   border-radius:4px;
   padding:6px;
   box-shadow:2px 2px 2px black;
-  cursor: pointer;
 }
 .button:hover{
   background-color:cornflowerblue;
 }
-.movie h3, .movie p{
-  font-size:18pt;
-}
-.divider{
-  clear:both;
-}
-
-.left{
-  float:left;
-  margin:20px;
-  box-shadow:2px 2px 2px gray;  
-}
-.movie h3{
-  font-style: italic;
-}
-#output{
-  background-color: tan;
+.flex-1{
+  flex:1;
 }
 .fitted{
   max-width:200px;
   min-width:200px;
-  border-radius:5px;
-  
-  box-shadow:2px 2px 2px lightskyblue;
 }
-
+.card img{
+  height:100px;
+}
+#output{
+  display:flex;
+  flex-wrap:wrap;
+}
